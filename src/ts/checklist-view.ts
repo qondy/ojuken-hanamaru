@@ -95,7 +95,7 @@ function renderRing(): void {
   const center = el('div', 'ring__center');
   center.append(
     textEl('span', 'ring__pct', `${Math.round(pct * 100)}%`),
-    textEl('span', 'ring__label', `◎ ${done} / ${total}`),
+    (() => { const l = textEl('span', 'ring__label', ''); l.innerHTML = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-3px;display:inline-block"><circle cx="26" cy="30" r="14"/><circle cx="38" cy="34" r="14"/></svg> ${done} / ${total}`; return l; })(),
   );
   wrap.append(center);
   mount.append(wrap);
@@ -121,8 +121,10 @@ function renderList(): void {
       const head = el('button', 'cat-head');
       head.type = 'button';
       head.setAttribute('aria-expanded', String(isOpen));
+      const catIcon = el('span', 'cat-head__icon');
+      catIcon.innerHTML = cat.icon;
       head.append(
-        textEl('span', 'cat-head__icon', cat.icon),
+        catIcon,
         textEl('span', 'cat-head__name', cat.label),
       );
       const meter = el('span', 'cat-head__meter');
@@ -131,7 +133,9 @@ function renderList(): void {
       meter.append(fill);
       head.append(meter);
       head.append(textEl('span', 'cat-head__count', `${cnt.done}/${rows.length}`));
-      head.append(textEl('span', 'cat-head__chev', isOpen ? '▲' : '▼'));
+      const chev = el('span', 'cat-head__chev');
+      chev.innerHTML = isOpen ? '<svg viewBox="0 0 64 64" fill="currentColor" stroke="none" style="width:0.9em;height:0.9em;vertical-align:-1px;display:inline-block"><path d="M32 18 L52 44 H12 Z"/></svg>' : '<svg viewBox="0 0 64 64" fill="currentColor" stroke="none" style="width:0.9em;height:0.9em;vertical-align:-1px;display:inline-block"><path d="M32 46 L12 20 H52 Z"/></svg>';
+      head.append(chev);
       head.addEventListener('click', () => {
         if (openCats.has(cat.key)) openCats.delete(cat.key);
         else openCats.add(cat.key);
@@ -165,7 +169,8 @@ function renderItemRow(row: Row): HTMLElement {
   STATUS_ORDER.forEach((s) => {
     const b = el('button', 'seg__btn' + (s === status ? ' is-active' : '') + ` seg__btn--${s}`);
     b.type = 'button';
-    b.textContent = STATUS_SHORT[s];
+    if (s === 'done') b.innerHTML = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em"><circle cx="26" cy="30" r="14"/><circle cx="38" cy="34" r="14"/></svg>';
+    else b.textContent = STATUS_SHORT[s];
     b.title = STATUS_LABEL[s];
     b.setAttribute('aria-label', STATUS_LABEL[s]);
     b.addEventListener('click', () => {
@@ -181,13 +186,13 @@ function renderItemRow(row: Row): HTMLElement {
   const actions = el('div', 'chk-item__actions');
   const noteBtn = el('button', 'linkish');
   noteBtn.type = 'button';
-  noteBtn.textContent = noteText ? '📝 メモを編集' : '＋ メモ';
+  noteBtn.innerHTML = noteText ? '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;display:inline-block"><rect x="14" y="10" width="36" height="44" rx="4"/><line x1="22" y1="22" x2="42" y2="22"/><line x1="22" y1="32" x2="42" y2="32"/><line x1="22" y1="42" x2="34" y2="42"/></svg> メモを編集' : '＋ メモ';
   actions.append(noteBtn);
 
   if (row.custom) {
     const delBtn = el('button', 'linkish is-danger');
     delBtn.type = 'button';
-    delBtn.textContent = '🗑 削除';
+    delBtn.innerHTML = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;display:inline-block"><path d="M14 18 H50"/><path d="M22 18 V12 Q22 10 24 10 H40 Q42 10 42 12 V18"/><path d="M18 18 L21 52 Q21 54 23 54 H41 Q43 54 43 52 L46 18"/><line x1="26" y1="26" x2="27" y2="46"/><line x1="38" y1="26" x2="37" y2="46"/></svg> 削除';
     delBtn.addEventListener('click', async () => {
       const ok = await confirmDelete(`「${row.label}」を削除しますか？`);
       if (!ok) return;

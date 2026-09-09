@@ -75,7 +75,7 @@
   width: 100%;
   box-shadow: 0 8px 32px rgba($color-primary, 0.14);
 
-  &__logo { display: block; font-size: 44px; margin-bottom: $spacing-sm; }
+  &__logo { display: block; font-size: 44px; margin-bottom: $spacing-sm; color: $color-primary; svg { width: 1em; height: 1em; } }
   &__title { font-size: $font-size-2xl; font-weight: 800; margin-bottom: $spacing-xs; }
   &__tagline {
     color: $color-text-muted;
@@ -124,6 +124,8 @@
     font-weight: 800;
     color: $color-primary;
     white-space: nowrap;
+
+    svg { width: 1em; height: 1em; vertical-align: -3px; }
   }
   &__nav { display: flex; align-items: center; gap: $spacing-md; margin-left: auto; }
   &__about-link {
@@ -153,7 +155,7 @@
   margin-bottom: $spacing-xl;
 
   &__head { margin-bottom: $spacing-md; }
-  &__title { font-size: $font-size-lg; font-weight: 800; }
+  &__title { font-size: $font-size-lg; font-weight: 800; svg { width: 1em; height: 1em; vertical-align: -3px; } }
   &__desc {
     font-size: $font-size-xs;
     color: $color-text-muted;
@@ -176,7 +178,7 @@
   font-size: $font-size-sm;
   line-height: 1.8;
 
-  &__icon { font-size: 40px; margin-bottom: $spacing-sm; }
+  &__icon { font-size: 40px; margin-bottom: $spacing-sm; svg { width: 1em; height: 1em; } }
 }
 
 // ===== Forms =====
@@ -272,6 +274,8 @@
   font-size: $font-size-xs;
   font-weight: 700;
 
+  svg { width: 1em; height: 1em; vertical-align: -2px; }
+
   &:hover { border-color: $color-primary; }
   &.is-on {
     background: rgba($color-primary, 0.12);
@@ -303,6 +307,8 @@
     font-weight: 700;
     color: $color-text;
     margin-top: $spacing-xs;
+
+    svg { width: 1em; height: 1em; vertical-align: -2px; }
   }
   &__sub {
     font-size: 10px;
@@ -373,7 +379,7 @@
 
   &:hover { background: $color-surface-2; }
 
-  &__icon { font-size: $font-size-base; flex-shrink: 0; }
+  &__icon { font-size: $font-size-base; flex-shrink: 0; color: $color-primary; svg { width: 1em; height: 1em; } }
   &__name {
     font-size: $font-size-sm;
     font-weight: 700;
@@ -569,6 +575,8 @@
   background: $color-surface-2;
   border-radius: 999px;
   padding: 2px 8px;
+
+  svg { width: 1em; height: 1em; vertical-align: -1px; }
 }
 
 // ===== 志望校 =====
@@ -802,6 +810,8 @@
   font-size: $font-size-sm;
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  svg { width: 1em; height: 1em; vertical-align: -2px; }
 
   &:hover { background: $color-primary-hover; }
 }

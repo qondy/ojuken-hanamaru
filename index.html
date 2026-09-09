@@ -34,7 +34,7 @@
   <!-- ログイン画面 -->
   <div id="login-screen" class="login-screen">
     <div class="login-card">
-      <span class="login-card__logo">💮</span>
+      <span class="login-card__logo"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg></span>
       <h1 class="login-card__title">お受験はなまる帳</h1>
       <p class="login-card__tagline">小学校受験の準備を、分野別チェックリスト・おけいこ記録・志望校・面接想定問答でまとめて管理。<br>できた課題に「はなまる」をつけて、いまの仕上がりを見える化します。</p>
       <button id="btn-google-login" class="google-btn">
@@ -52,7 +52,7 @@
 
   <div id="app" class="hidden">
     <header class="app-header">
-      <span class="app-header__brand">💮 お受験はなまる帳</span>
+      <span class="app-header__brand"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg> お受験はなまる帳</span>
       <nav class="app-header__nav">
         <a href="about.html" class="app-header__about-link">アプリについて</a>
         <div id="user-info" class="app-header__user hidden">
@@ -70,17 +70,17 @@
         <div class="stat-row">
           <div class="stat-card">
             <div class="stat-card__value" id="sum-rate">0%</div>
-            <div class="stat-card__label">💮 はなまる率</div>
-            <div class="stat-card__sub" id="sum-rate-sub">◎ 0 / 0</div>
+            <div class="stat-card__label"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg> はなまる率</div>
+            <div class="stat-card__sub" id="sum-rate-sub"></div>
           </div>
           <div class="stat-card">
             <div class="stat-card__value" id="sum-exam">—</div>
-            <div class="stat-card__label">📅 次の考査</div>
+            <div class="stat-card__label"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="16" width="40" height="36" rx="4"/><line x1="12" y1="26" x2="52" y2="26"/><line x1="22" y1="10" x2="22" y2="20"/><line x1="42" y1="10" x2="42" y2="20"/></svg> 次の考査</div>
             <div class="stat-card__sub" id="sum-exam-sub">志望校の考査日を登録すると表示されます</div>
           </div>
           <div class="stat-card">
             <div class="stat-card__value" id="sum-week">0日</div>
-            <div class="stat-card__label">✏️ 今週のおけいこ</div>
+            <div class="stat-card__label"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 12 L52 24 L24 52 L12 52 L12 40 Z"/><line x1="34" y1="18" x2="46" y2="30"/></svg> 今週のおけいこ</div>
             <div class="stat-card__sub">直近7日で記録した日数</div>
           </div>
         </div>
@@ -122,7 +122,7 @@
 
         <div id="okeiko-list" class="okeiko-list"></div>
         <div id="okeiko-empty" class="empty-state">
-          <div class="empty-state__icon">✏️</div>
+          <div class="empty-state__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 12 L52 24 L24 52 L12 52 L12 40 Z"/><line x1="34" y1="18" x2="46" y2="30"/></svg></div>
           <p>まだ記録がありません。上のフォームから今日のおけいこを記録してみましょう。</p>
         </div>
       </section>
@@ -130,7 +130,7 @@
       <!-- 分野別チェックリスト -->
       <section class="section">
         <div class="section__head">
-          <h2 class="section__title">💮 分野別チェックリスト</h2>
+          <h2 class="section__title"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg> 分野別チェックリスト</h2>
           <p class="section__desc">各課題を「未着手 / 練習中 / はなまる」で記録。分野名をタップで開閉できます。</p>
         </div>
 
@@ -178,7 +178,7 @@
 
         <div id="school-list" class="sc-list"></div>
         <div id="school-empty" class="empty-state">
-          <div class="empty-state__icon">📅</div>
+          <div class="empty-state__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="16" width="40" height="36" rx="4"/><line x1="12" y1="26" x2="52" y2="26"/><line x1="22" y1="10" x2="22" y2="20"/><line x1="42" y1="10" x2="42" y2="20"/></svg></div>
           <p>志望校がまだ登録されていません。</p>
         </div>
       </section>
@@ -186,7 +186,7 @@
       <!-- 面接想定問答集 -->
       <section class="section">
         <div class="section__head">
-          <h2 class="section__title">🎤 面接想定問答集</h2>
+          <h2 class="section__title"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="10" width="12" height="26" rx="6"/><path d="M18 28 A14 14 0 0 0 46 28"/><line x1="32" y1="42" x2="32" y2="52"/><line x1="22" y1="52" x2="42" y2="52"/></svg> 面接想定問答集</h2>
           <p class="section__desc">よく聞かれる質問と自分の回答を用意して、練習した質問にチェックを入れましょう。</p>
         </div>
 
@@ -214,7 +214,7 @@
         <div class="q-progress" id="question-progress"></div>
         <div id="question-list" class="qa-list"></div>
         <div id="question-empty" class="empty-state">
-          <div class="empty-state__icon">🎤</div>
+          <div class="empty-state__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="10" width="12" height="26" rx="6"/><path d="M18 28 A14 14 0 0 0 46 28"/><line x1="32" y1="42" x2="32" y2="52"/><line x1="22" y1="52" x2="42" y2="52"/></svg></div>
           <p>この対象の質問はまだありません。</p>
         </div>
       </section>
@@ -226,7 +226,7 @@
       <p><a href="https://apps.yuji-nakamura.com/" target="_blank" rel="noopener">他のアプリを見る →</a></p>
     </footer>
 
-    <button id="feedback-btn" class="feedback-btn">💬 ご意見・ご要望</button>
+    <button id="feedback-btn" class="feedback-btn"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="48" height="30" rx="8"/><path d="M22 44 L14 54 V44"/></svg> ご意見・ご要望</button>
   </div>
 
   <!-- 削除確認ダイアログ（カスタムUI） -->

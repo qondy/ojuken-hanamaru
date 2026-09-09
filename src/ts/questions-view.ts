@@ -154,11 +154,11 @@ function renderCard(q: Question): HTMLElement {
 
   const edit = el('button', 'linkish');
   edit.type = 'button';
-  edit.textContent = '✏️ 編集';
+  edit.innerHTML = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;display:inline-block"><path d="M40 12 L52 24 L24 52 L12 52 L12 40 Z"/><line x1="34" y1="18" x2="46" y2="30"/></svg> 編集';
   edit.addEventListener('click', () => startEdit(q));
   const del = el('button', 'linkish is-danger');
   del.type = 'button';
-  del.textContent = '🗑 削除';
+  del.innerHTML = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-2px;display:inline-block"><path d="M14 18 H50"/><path d="M22 18 V12 Q22 10 24 10 H40 Q42 10 42 12 V18"/><path d="M18 18 L21 52 Q21 54 23 54 H41 Q43 54 43 52 L46 18"/><line x1="26" y1="26" x2="27" y2="46"/><line x1="38" y1="26" x2="37" y2="46"/></svg> 削除';
   del.addEventListener('click', async () => {
     const ok = await confirmDelete('この質問を削除しますか？');
     if (!ok) return;

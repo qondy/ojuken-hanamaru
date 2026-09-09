@@ -41,7 +41,7 @@ function render(): void {
     ? Math.round((state.hanamaruDone / state.hanamaruTotal) * 100)
     : 0;
   rateEl.textContent = `${pct}%`;
-  rateSubEl.textContent = `◎ ${state.hanamaruDone} / ${state.hanamaruTotal}　練習中 ${state.learning}`;
+  rateSubEl.innerHTML = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="width:1em;height:1em;vertical-align:-3px;display:inline-block"><circle cx="26" cy="30" r="14"/><circle cx="38" cy="34" r="14"/></svg> ${state.hanamaruDone} / ${state.hanamaruTotal}　練習中 ${state.learning}`;
 
   if (state.nextExamDays === null) {
     examEl.textContent = '—';

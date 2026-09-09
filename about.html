@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --c1: #e5527e;
-    --c2: #f39abb;
+    --c1: #ea5f96;
+    --c2: #d1477a;
   }
   * { box-sizing: border-box; }
   body {
@@ -46,8 +46,9 @@
     position: relative; width: 128px; height: 128px; margin: 0 auto 24px;
     border-radius: 50%; background: rgba(255,255,255,0.94);
     display: flex; align-items: center; justify-content: center;
-    font-size: 64px; box-shadow: 0 0 0 14px rgba(255,255,255,0.14);
+    font-size: 64px; color: var(--c1); box-shadow: 0 0 0 14px rgba(255,255,255,0.14);
   }
+  .badge svg { width: 64px; height: 64px; }
   .category-pill {
     position: relative; display: inline-block;
     background: rgba(255,255,255,0.18); color: #fff;
@@ -78,7 +79,8 @@
   .feature-card {
     background: #241820; border: 1px solid #3a2a33; border-radius: 16px; padding: 24px;
   }
-  .feature-icon { font-size: 28px; margin-bottom: 12px; }
+  .feature-icon { font-size: 28px; margin-bottom: 12px; color: var(--c1); }
+  .feature-icon svg { width: 30px; height: 30px; }
   .feature-title { font-size: 16px; font-weight: 700; margin: 0 0 8px; color: #fff; }
   .feature-desc { font-size: 14px; color: #c7b3bd; margin: 0; }
 
@@ -115,7 +117,7 @@
 
   <section class="hero">
     <span class="category-pill">家族</span>
-    <div class="badge">💮</div>
+    <div class="badge"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg></div>
     <h1>お受験はなまる帳</h1>
     <p class="tagline">小学校受験の準備は、分野が多くて「いま何がどこまで仕上がっているか」が見えづらいもの。分野別チェックリスト・おけいこ記録・志望校・面接想定問答をひとつにまとめ、できた課題に「はなまる」をつけて進み具合を見える化します。</p>
     <a class="cta" href="https://ojuken-hanamaru.vercel.app">アプリを使ってみる →</a>
@@ -125,22 +127,22 @@
     <h2>できること</h2>
     <div class="feature-grid">
       <div class="feature-card">
-        <div class="feature-icon">💮</div>
+        <div class="feature-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="7"/><path d="M43 43 L52 52"/></svg></div>
         <h3 class="feature-title">分野別チェックリスト</h3>
         <p class="feature-desc">ペーパー（数量・図形・推理・言語・記憶・常識ほか）と、行動観察・運動・巧緻性・生活習慣・口頭試問まで約90項目を収録。各課題を「未着手／練習中／はなまる」で記録し、分野ごとの達成率とはなまる率をリングで表示します。項目の追加も自由。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">✏️</div>
+        <div class="feature-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M40 12 L52 24 L24 52 L12 52 L12 40 Z"/><line x1="34" y1="18" x2="46" y2="30"/></svg></div>
         <h3 class="feature-title">おけいこ記録</h3>
         <p class="feature-desc">その日取り組んだ内容・子どもの様子・つまずきを日付ごとに記録。関連する分野タグをつけておけば、あとから「どの分野をどれだけやったか」を振り返れます。直近7日のおけいこ日数もひと目で確認。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📅</div>
+        <div class="feature-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="16" width="40" height="36" rx="4"/><line x1="12" y1="26" x2="52" y2="26"/><line x1="22" y1="10" x2="22" y2="20"/><line x1="42" y1="10" x2="42" y2="20"/></svg></div>
         <h3 class="feature-title">志望校リスト</h3>
         <p class="feature-desc">学校名・考査日・出願期間を登録すると、考査本番までの残り日数と「出願受付中／もうすぐ開始／終了」を自動表示。いちばん近い考査日はトップのサマリーにも出ます。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🎤</div>
+        <div class="feature-icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="10" width="12" height="26" rx="6"/><path d="M18 28 A14 14 0 0 0 46 28"/><line x1="32" y1="42" x2="32" y2="52"/><line x1="22" y1="52" x2="42" y2="52"/></svg></div>
         <h3 class="feature-title">面接想定問答集</h3>
         <p class="feature-desc">親・子どものタブ別に、よく聞かれる質問と自分の回答を用意。練習した質問にチェックを入れると「練習済み◯／◯」で進み具合が分かります。</p>
       </div>

@@ -23,7 +23,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-kazu',
     label: '数量',
-    icon: '🔢',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="18" x2="52" y2="18"/><line x1="12" y1="32" x2="52" y2="32"/><line x1="12" y1="46" x2="52" y2="46"/><circle cx="20" cy="18" r="4" fill="currentColor" stroke="none"/><circle cx="32" cy="32" r="4" fill="currentColor" stroke="none"/><circle cx="44" cy="46" r="4" fill="currentColor" stroke="none"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-kazu__keisu', label: '20くらいまで正しく数える' },
@@ -38,7 +38,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-zukei',
     label: '図形',
-    icon: '🔷',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="30" width="20" height="20" rx="2"/><circle cx="42" cy="24" r="12"/><path d="M32 52 L44 32 L56 52 Z"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-zukei__onaji', label: '同じ形をさがす' },
@@ -52,7 +52,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-suiri',
     label: '推理・思考',
-    icon: '🧩',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16 H30 V22 A5 5 0 0 1 40 22 V16 H50 V26 A5 5 0 0 0 50 36 V46 H40 V40 A5 5 0 0 0 30 40 V46 H20 V36 A5 5 0 0 1 20 26 Z"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-suiri__keiretsu', label: '系列（順番のきまり）' },
@@ -66,7 +66,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-gengo',
     label: '言語',
-    icon: '🗣️',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="14" width="48" height="30" rx="8"/><path d="M22 44 L14 54 V44"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-gengo__shiritori', label: 'しりとり' },
@@ -81,7 +81,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-kioku',
     label: '記憶',
-    icon: '🧠',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 14 C16 14 12 20 14 26 C8 28 8 38 14 40 C12 46 18 52 26 50 C28 54 36 54 38 50 C46 52 52 46 50 40 C56 38 56 28 50 26 C52 20 48 14 40 14 C36 14 34 16 32 18 C30 16 28 14 24 14 Z"/><line x1="32" y1="18" x2="32" y2="50"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-kioku__ohanashi', label: 'お話の記憶' },
@@ -93,7 +93,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-joshiki',
     label: '常識',
-    icon: '🌸',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="18" r="7"/><circle cx="46" cy="32" r="7"/><circle cx="32" cy="46" r="7"/><circle cx="18" cy="32" r="7"/><circle cx="32" cy="32" r="6" fill="currentColor" stroke="none"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-joshiki__kisetsu', label: '季節（花・食べ物・行事）' },
@@ -108,7 +108,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'paper-hikaku',
     label: '比較・位置・分類',
-    icon: '📏',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="26" width="48" height="12" rx="2"/><line x1="16" y1="26" x2="16" y2="32"/><line x1="24" y1="26" x2="24" y2="34"/><line x1="32" y1="26" x2="32" y2="32"/><line x1="40" y1="26" x2="40" y2="34"/><line x1="48" y1="26" x2="48" y2="32"/></svg>',
     group: 'paper',
     items: [
       { key: 'paper-hikaku__nagasa', label: '長さくらべ' },
@@ -123,7 +123,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'koudou',
     label: '行動観察',
-    icon: '🤝',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="22" cy="24" r="9"/><path d="M8 50 C8 38 14 34 22 34 C30 34 36 38 36 50"/><circle cx="44" cy="26" r="8"/><path d="M32 50 C32 40 37 36 44 36 C51 36 56 40 56 50"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'koudou__aisatsu', label: 'あいさつ・返事がはっきりできる' },
@@ -138,7 +138,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'undou',
     label: '運動',
-    icon: '🏃',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="36" cy="14" r="6"/><path d="M36 20 L30 34 L18 40"/><path d="M30 34 L40 44 L48 38"/><path d="M30 34 L20 26"/><path d="M40 44 L44 56"/><path d="M30 34 L26 56"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'undou__kenken', label: 'ケンケン（左右とも）' },
@@ -155,7 +155,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'kouchisei',
     label: '巧緻性',
-    icon: '✂️',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="6"/><circle cx="16" cy="48" r="6"/><line x1="20" y1="20" x2="52" y2="52"/><line x1="20" y1="44" x2="52" y2="12"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'kouchisei__chomusubi', label: 'ちょう結び' },
@@ -172,7 +172,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'seisaku',
     label: '絵画・制作',
-    icon: '🎨',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 10 C16 10 8 22 8 34 C8 44 16 48 22 44 C24 42 28 42 30 46 C32 50 38 50 40 46 C48 44 56 36 56 26 C56 16 46 10 32 10 Z"/><circle cx="20" cy="26" r="3" fill="currentColor" stroke="none"/><circle cx="30" cy="20" r="3" fill="currentColor" stroke="none"/><circle cx="42" cy="22" r="3" fill="currentColor" stroke="none"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'seisaku__jinbutsu', label: '人物（家族・自分）を描く' },
@@ -186,7 +186,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'seikatsu',
     label: '生活習慣',
-    icon: '🧦',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 30 L32 12 L52 30"/><path d="M18 26 V52 H46 V26"/><line x1="32" y1="52" x2="32" y2="38"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'seikatsu__chakudatsu', label: '衣服の着脱・たたむ' },
@@ -201,7 +201,7 @@ export const CATEGORIES: Category[] = [
   {
     key: 'koutou',
     label: '口頭試問・面接',
-    icon: '🎤',
+    icon: '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="10" width="12" height="26" rx="6"/><path d="M18 28 A14 14 0 0 0 46 28"/><line x1="32" y1="42" x2="32" y2="52"/><line x1="22" y1="52" x2="42" y2="52"/></svg>',
     group: 'nonpaper',
     items: [
       { key: 'koutou__namae', label: '名前・年齢・誕生日を言える' },
