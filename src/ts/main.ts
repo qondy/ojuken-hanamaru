@@ -9,6 +9,9 @@ import { mountChecklist } from './checklist-view';
 import { mountOkeiko } from './okeiko-view';
 import { mountSchools } from './schools-view';
 import { mountQuestions } from './questions-view';
+import { initClickTracking } from './analytics';
+
+initClickTracking();
 
 // ============================================================
 // DOM refs
