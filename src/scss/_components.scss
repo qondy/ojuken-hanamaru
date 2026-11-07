@@ -311,7 +311,7 @@
     svg { width: 1em; height: 1em; vertical-align: -2px; }
   }
   &__sub {
-    font-size: 10px;
+    font-size: 11px;
     color: $color-text-muted;
     margin-top: 3px;
     line-height: 1.5;
@@ -409,7 +409,7 @@
     text-align: right;
   }
   &__chev {
-    font-size: 9px;
+    font-size: 11px;
     color: $color-text-muted;
     flex-shrink: 0;
   }
@@ -440,7 +440,7 @@
   }
   &__tag {
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     color: $color-accent-hover;
     background: rgba($color-accent, 0.14);
@@ -569,7 +569,7 @@
 }
 
 .mini-tag {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: $color-text-muted;
   background: $color-surface-2;
